@@ -1,0 +1,115 @@
+//
+// VARIABLES
+//-------------------------------
+
+$color-text: #fff;
+$color-muted: #777;
+
+$color-bg-body: #2f313c;
+$color-bg-gallery: #ffd256;
+
+$font-family-serif: 'Roboto Serif', serif;
+$font-family-handwriting:'Shadows Into Light', cursive;
+$font-size-base: 100%;
+
+
+$color-bg-body: #2f313c;
+$color-bg-home: #8fd2d1;
+$color-bg-bg-gallery: #ffd256;
+$color-bg-blog: #019dcd;
+$color-bg-contact: #fd6868;
+
+
+
+//
+// GENERAL
+//-------------------------------
+
+body{
+    color: $color-text;
+    background: $color-bg-body;
+
+    font: {
+        size: $font-size-base;
+        family: $font-family-handwriting;
+        weight: normal;
+    }
+
+    text-align: center;
+    margin: 0;
+}
+
+
+
+a{
+    color: $color-muted;
+    text-decoration: none;
+    font-family: $font-family-serif;
+    
+    
+}
+
+img{
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.menu{
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+
+    li, a{
+        display: inline-block;
+    }
+}
+
+
+//
+// TYPOGRAPHY
+//-------------------------------
+
+
+h1{
+    font-size: 75px;
+    text-transform: uppercase;
+}
+
+
+
+//
+// SITE HEADER
+//-------------------------------
+
+
+.site-header{
+    background: #fff;
+
+    a{
+        color: $color-muted;
+
+        font-size: 13px;
+        padding: 24px 8px;
+
+        &:hover,
+        &:focus {
+            color: lighten ($color-muted, 50%) ;
+        }
+    }
+}
+
+
+
+//
+// CONTENT
+//-------------------------------
+
+h1{
+    background: $color-bg-gallery;
+    margin: 0;
+    padding: {
+        top: 80px;
+        bottom: 80px;
+    }
+}
